@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+}
+
+body{
+      background-color: #0f1B21;
+      text-align: center;   
+}
+h1{
+      font-size: 47px;
+      margin-top: 40px;
+      color: #fff;
+
+}
+.container{
+      height: 70vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.game{
+      height: 60vmin;
+      width:  60vmin;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5vmin;
+      justify-content: center;
+      align-items: center;
+}
+.box{
+      height: 18vmin;
+      width: 18vmin;
+      border: none;
+      border-radius: 1rem;
+      box-shadow: 0 0 1rem rgba(0, 0,0,0.3);
+      font-size: 8vmin;
+      cursor: pointer;
+      font-weight: 500;
+      background-color: #26404d;
+}
+#reset-btn ,#new-btn{
+      padding: 1rem;
+      font-size: 1.25rem;
+      border-radius: 1rem;
+      border: none;
+      background-color: #26404d;
+      color: #26ffcb;
+      cursor: pointer;
+}
+
+.msg-container{
+      height: 100vmin;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 4rem;
+}
+
+#msg{
+      
+      color: #ffb326ff;
+      font-size: 5vmin;
+}
+.hide{
+      display: none;
+}
+@media screen and (max-width: 768px) {
+      h1 {
+            font-size: 36px;
+            margin-top: 30px;
+      }
+
+      .container {
+            height: auto;
+            padding: 20px 0;
+      }
+
+      .game {
+            height: 80vmin;
+            width: 80vmin;
+            gap: 2vmin;
+      }
+
+      .box {
+            height: 22vmin;
+            width: 22vmin;
+            font-size: 10vmin;
+      }
+
+      #reset-btn,
+      #new-btn {
+            padding: 0.8rem;
+            font-size: 1rem;
+      }
+
+      #msg {
+            font-size: 4vmin;
+      }
+}
+
+@media screen and (max-width: 480px) {
+      h1 {
+            font-size: 28px;
+            
+      }
+      .game-container{
+            margin-top: 100px;
+      }
+      .game {
+            height: 90vmin;
+            width: 90vmin;
+            gap: 1.5vmin;
+      }
+
+      .box {
+            height: 26vmin;
+            width: 26vmin;
+            font-size: 9vmin;
+      }
+
+      #msg {
+            margin-top: 90%;
+            font-size: 5.5vmin;
+      }
+}
